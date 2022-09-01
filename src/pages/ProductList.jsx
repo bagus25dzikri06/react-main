@@ -13,9 +13,14 @@ const ProductList = () => {
     setProducts([...products, product])
     setProduct('')
   }
+  const customFont = {
+    color: 'black',
+    fontSize: '20px'
+  }
 
   return (
     <div className="wrapper">
+      <h2 style={customFont}>Product List</h2>
       <div className="input-group mb-3">
         <Input id="123" name="product" type="text" onChange={handleChange} value={product} />
         <Button id='123' type='button' onClick={handleSave} />
